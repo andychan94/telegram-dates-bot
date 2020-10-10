@@ -1,5 +1,6 @@
-from dotenv import load_dotenv
 import os
+
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -15,7 +16,7 @@ conf = {
     },
     'user_id': os.getenv('ALLOWED_USER_ID')
 }
-constants = {
+messages = {
     'add_date_btn': 'Добавить дату',
     'remove_date_btn': 'Удалить дату',
     'view_dates_btn': 'Список дат',
@@ -29,7 +30,14 @@ constants = {
     'not_valid_user': 'Неавторизованный пользователь',
     'error_occurred': 'Произошла ошибка, свяжитесь с админом бота - @nodirosaka',
 
-    'input_name': 'Как зовут человека?'
+    'input_name': 'Как зовут человека?',
+    'input_type': 'Выберите тип даты. Если оба варианта не подходят, пришлите тип даты текстом',
+    'birthday_type': 'День рождения',
+    'anniv_type': 'Годовщина свадьбы',
+    'input_date': 'Введите дату в формате day/month/year. Eg: 18/03/2020',
+    'input_date_invalid': 'Формат неверный. Введите дату в формате day/month/year. Eg: 18/03/2020',
+    'input_photo': 'Пришлите фотографию',
+    'new_added_date': 'Дата сохранена!\n\n$name\n$date_type\n$date',
 }
 emojis = {
     'plus': u'\U00002795',
